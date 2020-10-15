@@ -11,7 +11,7 @@ body {
   margin: auto;
 }
 
-header {
+#container header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -23,7 +23,7 @@ header {
   background-color: #ffffff;
 }
 
-header .menu-container {
+#container header .menu-container {
   display: none;
   font-family: Arial;
   font-style: normal;
@@ -32,11 +32,11 @@ header .menu-container {
   line-height: 28px;
 }
 
-header .menu-container .menu:hover {
+#container header .menu-container .menu:hover {
   cursor: pointer;
 }
 
-header section#title {
+#container header section#title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -50,12 +50,12 @@ header section#title {
   margin-right: 1vw;
 }
 
-header section#title img {
+#container header section#title img {
   width: 161px;
   height: 59px;
 }
 
-header nav {
+#container header nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -64,7 +64,7 @@ header nav {
           flex-grow: 1;
 }
 
-header nav ul {
+#container header nav ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -88,24 +88,24 @@ header nav ul {
   line-height: 28px;
 }
 
-header nav ul li {
+#container header nav ul li {
   padding: 5px;
   margin: auto;
 }
 
-header nav ul li span:hover {
+#container header nav ul li span:hover {
   cursor: pointer;
 }
 
 @media (max-width: 840px) {
-  header nav ul li {
+  #container header nav ul li {
     -ms-flex-preferred-size: 20%;
         flex-basis: 20%;
   }
 }
 
 @media (max-width: 700px) {
-  header .menu-container {
+  #container header .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -120,21 +120,30 @@ header nav ul li span:hover {
             flex-grow: 1;
     margin-left: 3vw;
   }
-  header section#title {
+  #container header section#title {
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
     margin-right: 3vw;
   }
-  header nav {
+  #container header nav {
     display: none;
   }
+}
+
+.hide-container {
+  display: none;
 }
 
 .section {
   width: calc(100vw-20px);
   height: 300px;
   background-color: #F8F8F8;
+  display: none;
+}
+
+.current {
+  display: block;
 }
 
 #menu {
@@ -222,14 +231,6 @@ header nav ul li span:hover {
 
 .hide-menu {
   display: none;
-}
-
-.hide-container {
-  display: none;
-}
-
-.show-container {
-  display: block;
 }
 
 .pressed-tab {

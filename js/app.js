@@ -4,8 +4,7 @@ const container = document.querySelector('#container');
 const btnMenu = document.querySelector('.menu');
 const menu = document.querySelector('#menu');
 const back = document.querySelector('.back');
-
-
+const sections = [...document.querySelectorAll('.section')];
 
 
 tabs.forEach(tab => {
@@ -14,19 +13,27 @@ tabs.forEach(tab => {
             tab.classList.remove('pressed-tab')
         });
         e.target.classList.add('pressed-tab');
+        sections.forEach( section =>{
+            if(section.dataset.id === e.currentTarget.dataset.id){
+                sections.forEach( section =>{
+                    section.classList.remove('current');
+                })
+                section.classList.add('current');
+            }
+        })
+        // tab2
     })
 })
 
 btnMenu.addEventListener('click', ()=>{
-    container.classList.add('hide-container');
-    container.classList.remove('show-container');
+    container.classList.toggle('hide-container');
     menu.classList.add('show-menu');
     menu.classList.remove('hide-menu');
 })
 
 back.addEventListener('click', () =>{
-    container.classList.add('show-container');
-    container.classList.remove('hide-container');
+    container.classList.toggle('hide-container');
     menu.classList.remove('show-menu');
     menu.classList.add('hide-menu');
 })
+
