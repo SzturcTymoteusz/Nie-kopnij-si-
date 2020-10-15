@@ -11,6 +11,8 @@ header
         font-weight: bold
         font-size: 24px
         line-height: 28px
+        .menu:hover
+            cursor: pointer
     section#title
         display: flex
         align-items: center
@@ -40,8 +42,10 @@ header
             li
                 padding: 5px
                 margin: auto
-                span.pressed-tab
-                    text-decoration: underline
+                span
+                    &:hover
+                        cursor: pointer
+
 
 @media (max-width: 840px)
     header

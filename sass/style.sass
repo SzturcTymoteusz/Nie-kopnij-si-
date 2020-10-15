@@ -1,7 +1,19 @@
-body
+*
     margin: 0
     padding: 0
     box-sizing: border-box
-    min-height: 100vh
+body
+    min-width: 300px
+    max-width: 1400px
+    margin: auto
+
 @import _header
 @import _section
+@import _menu
+
+.hide-container
+    display: none
+.show-container
+    display: block
+.pressed-tab
+    text-decoration: underline

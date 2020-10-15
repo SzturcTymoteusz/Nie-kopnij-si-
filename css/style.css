@@ -1,9 +1,14 @@
-body {
+* {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  min-height: 100vh;
+}
+
+body {
+  min-width: 300px;
+  max-width: 1400px;
+  margin: auto;
 }
 
 header {
@@ -25,6 +30,10 @@ header .menu-container {
   font-weight: bold;
   font-size: 24px;
   line-height: 28px;
+}
+
+header .menu-container .menu:hover {
+  cursor: pointer;
 }
 
 header section#title {
@@ -84,8 +93,8 @@ header nav ul li {
   margin: auto;
 }
 
-header nav ul li span.pressed-tab {
-  text-decoration: underline;
+header nav ul li span:hover {
+  cursor: pointer;
 }
 
 @media (max-width: 840px) {
@@ -126,5 +135,104 @@ header nav ul li span.pressed-tab {
   width: calc(100vw-20px);
   height: 300px;
   background-color: #F8F8F8;
+}
+
+#menu {
+  width: 100%;
+  min-height: 736px;
+  background-color: #F2E617;
+}
+
+#menu .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#menu .content nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 88px;
+      flex-basis: 88px;
+}
+
+#menu .content nav .back-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 34px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+#menu .content nav .back-container span:hover {
+  cursor: pointer;
+}
+
+#menu .content nav .menu-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  margin-right: 37px;
+}
+
+#menu .content nav .menu-title img {
+  width: 104px;
+  height: 36px;
+}
+
+#menu .content section ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 32px;
+  line-height: 37px;
+  text-align: center;
+}
+
+.show-menu {
+  display: block;
+}
+
+.hide-menu {
+  display: none;
+}
+
+.hide-container {
+  display: none;
+}
+
+.show-container {
+  display: block;
+}
+
+.pressed-tab {
+  text-decoration: underline;
 }
 /*# sourceMappingURL=style.css.map */
