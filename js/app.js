@@ -1,5 +1,4 @@
 const tabs = [...document.querySelectorAll('.tabs')];
-const tabs2 = [...document.querySelectorAll('.tabs2')];
 const container = document.querySelector('#container');
 const btnMenu = document.querySelector('.menu');
 const menu = document.querySelector('#menu');
@@ -9,31 +8,56 @@ const sections = [...document.querySelectorAll('.section')];
 
 tabs.forEach(tab => {
     tab.addEventListener('click', e =>{
-        tabs.forEach(tab => {
-            tab.classList.remove('pressed-tab')
-        });
-        e.target.classList.add('pressed-tab');
-        sections.forEach( section =>{
-            if(section.dataset.id === e.currentTarget.dataset.id){
-                sections.forEach( section =>{
-                    section.classList.remove('current');
-                })
-                section.classList.add('current');
-            }
-        })
-        // tab2
+        changeTab(e);
+        changeSection(e);
     })
 })
 
+// after we click on a tab, underline current pressed tab
+const changeTab = e =>{
+    tabs.forEach(tab => {
+        if(tab === e.target || e.target.dataset.id === tab.dataset.id){
+           tab.classList.add('pressed-tab');
+        }
+        else{
+            tab.classList.remove('pressed-tab');
+        }
+    });
+}
+
+//after we click on a tab, change current section
+const changeSection = e=> {
+    sections.forEach( section =>{
+        if(section.dataset.id === e.currentTarget.dataset.id){
+            sections.forEach( section =>{
+                section.classList.remove('current');
+            })
+            section.classList.add('current');
+        }
+    })
+}
+
+// open menu, change size windows,
+const changeSize = () => {
+    window.onresize = () =>{
+    const openMenu = container.classList.contains('hide-container');
+        if(openMenu && window.innerWidth >= 700){
+            container.classList.toggle('hide-container');
+            menu.classList.toggle('hide-menu');
+        }
+    }
+}
+
+changeSize();
+
+
 btnMenu.addEventListener('click', ()=>{
     container.classList.toggle('hide-container');
-    menu.classList.add('show-menu');
-    menu.classList.remove('hide-menu');
+    menu.classList.toggle('hide-menu');
 })
 
 back.addEventListener('click', () =>{
     container.classList.toggle('hide-container');
-    menu.classList.remove('show-menu');
-    menu.classList.add('hide-menu');
+    menu.classList.toggle('hide-menu');
 })
 

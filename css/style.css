@@ -247,8 +247,8 @@ body {
   text-align: center;
 }
 
-.show-menu {
-  display: block;
+#menu .content section ul li span:hover {
+  cursor: pointer;
 }
 
 .hide-menu {
