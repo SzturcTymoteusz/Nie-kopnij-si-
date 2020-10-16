@@ -10,6 +10,8 @@ tabs.forEach(tab => {
     tab.addEventListener('click', e =>{
         changeTab(e);
         changeSection(e);
+        container.classList.remove('hide-container');
+        menu.classList.add('hide-menu');
     })
 })
 
