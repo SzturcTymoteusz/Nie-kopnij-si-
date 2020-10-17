@@ -10,8 +10,7 @@ tabs.forEach(tab => {
     tab.addEventListener('click', e =>{
         changeTab(e);
         changeSection(e);
-        container.classList.remove('hide-container');
-        menu.classList.add('hide-menu');
+        menu.classList.remove('show-menu');
     })
 })
 
@@ -39,13 +38,13 @@ const changeSection = e=> {
     })
 }
 
+
 // open menu, change size windows,
 const changeSize = () => {
     window.onresize = () =>{
-    const openMenu = container.classList.contains('hide-container');
+    const openMenu = menu.classList.contains('show-menu');
         if(openMenu && window.innerWidth >= 700){
-            container.classList.toggle('hide-container');
-            menu.classList.toggle('hide-menu');
+            menu.classList.toggle('show-menu');
         }
     }
 }
@@ -54,12 +53,10 @@ changeSize();
 
 
 btnMenu.addEventListener('click', ()=>{
-    container.classList.toggle('hide-container');
-    menu.classList.toggle('hide-menu');
+    menu.classList.toggle('show-menu');
 })
 
 back.addEventListener('click', () =>{
-    container.classList.toggle('hide-container');
-    menu.classList.toggle('hide-menu');
+    menu.classList.toggle('show-menu');
 })
 

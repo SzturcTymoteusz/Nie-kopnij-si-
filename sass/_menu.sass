@@ -1,13 +1,13 @@
 #menu
+    position: absolute
     width: 100%
     background-color: #F2E617
     .content
         display: flex
         flex-direction: column
-        min-height: 100vh
+        height: 100vh
         nav
             display: flex
-            position: absolute
             top: 0px
             left: 0px
             height: 88px
@@ -53,5 +53,12 @@
                     span:hover
                         cursor: pointer
 
-.hide-menu
-    display: none
+.show-menu
+    z-index: 2
+
+@media ( min-width: 700px)
+    .show-menu
+        z-index: 0
+@media screen and ( max-width: 700px )
+    .show-menu
+        z-index: 0

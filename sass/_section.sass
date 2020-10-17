@@ -1,13 +1,13 @@
 .wraper-sections
     height: calc( 100vh - 108px)
+    position: relative
 .section
-    width: calc(100vw-20px)
+    width: 100%
     height: 100%
     background-color: #F8F8F8
-    display: none
+    position: absolute
 .wraper-sections > section:nth-child(1)
     div
-        display: flex
         flex-direction: row
         .text-wraper
             display: flex
@@ -27,5 +27,5 @@
 .wraper-sections > section:nth-child(4)
 
 .current
-    display: block
+    z-index: 1
 
