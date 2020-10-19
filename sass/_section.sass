@@ -1,5 +1,6 @@
 .wraper-sections
-    height: calc( 100vh - 108px)
+    min-height: calc( 100vh - 96px)
+    // min-height: 626px
     position: relative
 .section
     width: 100%
@@ -8,24 +9,164 @@
     position: absolute
 .wraper-sections > section:nth-child(1)
     div
-        flex-direction: row
+        height: 100%
+        display: flex
+        overflow: hidden
         .text-wraper
-            display: flex
-            align-items: center
-            justify-content: center
             flex-grow: 1
             .text
                 display: flex
                 flex-direction: column
-                p
+                align-items: flex-start
+                justify-content: center
+                width: 376px
+                position: relative
+                top: 0%
+                left: 203px
+                div
+                    height: 84px
+                    width: 376px
+                    margin-bottom: 29px
+                // p.text-title
+                //     ont-family: BubbleGum
+                //     font-style: normal
+                //     font-weight: normal
+                //     font-size: 42px
+                //     line-height: 42px
+                //     margin-bottom: 29px
+                p.text-content
+                    font-family: Lora
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 22px
+                    line-height: 34px
+                    margin-bottom: 35px
                 .btn
+                    width: 248px
+                    height: 88px
+                    background: #F2E617
+                    border-radius: 100px
         .images
+            display: flex
+            align-items: center
+            justify-content: flex-end
+            flex-basis: 55%
+            height: 100%
+            padding-right: 125px
+            .img-wraper
+                position: relative
+                left: 0%
+                top: 0%
+                height: 626px
+                width: 692px
+                .main-img
+                    position: absolute
+                    top: 0px
+                    right: 0px
+                    z-index: 2
+                    height: 626px
+                    width: 692px
+                .first-circle
+                    position: absolute
+                    top: 251px
+                    right: 0px
+                    z-index: 1
+                    height: 341px
+                    width: 341px
+                .second-circle
+                    position: absolute
+                    top: 23px
+                    right: 366px
+                    height: 209px
+                    width: 209px
+                .ladybug1
+                    position: absolute
+                    bottom: 165px
+                    right: 16px
+                    z-index: 2
+                    height: 63px
+                    width: 65px
+                .paramecium
+                    position: absolute
+                    top: 23px
+                    right: 71px
+                    z-index: 2
+                    height: 95px
+                    width: 110px
+                .ladybug2
+                    position: absolute
+                    bottom: 242.5px
+                    right: 470.5px
+                    z-index: 2
+                    height: 92.5px
+                    width: 124.5px
+                .redCircle
+                    position: absolute
+                    top: 450px
+                    right: 320.9px
+                    z-index: 2
+                    height: 89.38px
+                    width: 89.38px
+                    transform: rotate(-30deg)
+                img
+                    height: 100%
+                    width: 100%
 
+@media ( max-width: 1300px )
+    .text
+        left: 100px !important
+    .images
+        padding-right: 50px !important
+@media ( max-width: 1120px )
+    .text
+        left: 40px !important
+    .images
+        padding-right: 10px !important
+    .img-wraper
+        left: -13% !important
+@media ( max-width: 990px )
+    .text
+        left: 5px !important
+    .images
+        padding-right: 5px !important
+    .img-wraper, .text-wraper
+        transform: scale(0.8)
+    .img-wraper
+        left: -20% !important
+@media ( max-width: 890px )
+    .text
+        left: 0px !important
+    .images
+        padding-right: 3px !important
+    .img-wraper, .text-wraper
+        transform: scale(0.7)
+    .img-wraper
+        left: -35% !important
+@media (max-width: 750px)
+    .first-circle
+        right: 10% !important
+    .ladybug1
+        right: 75px !important
+@media (max-width: 700px)
+    .wraper-sections > section:nth-child(1)
+        div
+            flex-direction: column
+            overflow: visible
+    .text-wraper
+        display: flex
+        justify-content: center
+        .text
+            margin-top: 0px
+            align-items: center !important
+            p.text-content
+                text-align: center
+    .img-wraper
+        left: 0% !important
 
 .wraper-sections > section:nth-child(2)
 .wraper-sections > section:nth-child(3)
 .wraper-sections > section:nth-child(4)
 
 .current
-    z-index: 1
+    z-index: 3
 
