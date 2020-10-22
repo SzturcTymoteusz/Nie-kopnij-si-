@@ -7,15 +7,16 @@
 
 body {
   min-width: 300px;
-  height: 722px;
-  min-height: 100vh;
   margin: auto;
 }
 
 #container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   position: absolute;
-  z-index: 1;
   width: 100%;
+  min-height: 100vh;
 }
 
 #container header {
@@ -25,6 +26,7 @@ body {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
+  z-index: 3;
   width: 100%;
   height: 96px;
   background-color: #ffffff;
@@ -109,6 +111,12 @@ body {
 }
 
 @media (max-width: 700px) {
+  #container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
   #container header .menu-container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -136,8 +144,11 @@ body {
 }
 
 .wraper-sections {
-  min-height: calc( 100vh - 96px);
-  position: relative;
+  width: 100%;
+  height: calc( 100% -  96px);
+  position: absolute;
+  top: 96px;
+  left: 0px;
 }
 
 .section {
@@ -145,6 +156,7 @@ body {
   height: 100%;
   background-color: #F8F8F8;
   position: absolute;
+  z-index: 1;
 }
 
 .wraper-sections > section:nth-child(1) div {
@@ -152,7 +164,6 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow: hidden;
 }
 
 .wraper-sections > section:nth-child(1) div .text-wraper {
@@ -215,16 +226,15 @@ body {
           justify-content: flex-end;
   -ms-flex-preferred-size: 55%;
       flex-basis: 55%;
-  height: 100%;
-  padding-right: 125px;
+  right: 0px;
 }
 
 .wraper-sections > section:nth-child(1) div .images .img-wraper {
-  position: relative;
-  left: 0%;
-  top: 0%;
   height: 626px;
   width: 692px;
+  position: relative;
+  top: 0px;
+  right: 135px;
 }
 
 .wraper-sections > section:nth-child(1) div .images .img-wraper .main-img {
@@ -232,8 +242,6 @@ body {
   top: 0px;
   right: 0px;
   z-index: 2;
-  height: 626px;
-  width: 692px;
 }
 
 .wraper-sections > section:nth-child(1) div .images .img-wraper .first-circle {
@@ -291,82 +299,123 @@ body {
           transform: rotate(-30deg);
 }
 
-.wraper-sections > section:nth-child(1) div .images .img-wraper img {
-  height: 100%;
+.wraper-sections > section:nth-child(1) div .images .img-wraper picture {
   width: 100%;
 }
 
-@media (max-width: 1300px) {
-  .text {
-    left: 100px !important;
+.wraper-sections > section:nth-child(1) div .images .img-wraper picture img {
+  width: 100%;
+  height: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .wraper-sections > section:nth-child(1) div .text-wraper .text {
+    left: 80px;
   }
-  .images {
-    padding-right: 50px !important;
+  .wraper-sections > section:nth-child(1) div .images .img-wraper {
+    right: 80px;
   }
 }
 
-@media (max-width: 1120px) {
-  .text {
-    left: 40px !important;
+@media screen and (max-width: 1100px) {
+  .wraper-sections > section:nth-child(1) div .text-wraper .text {
+    width: 290px;
+    left: 30px;
   }
-  .images {
-    padding-right: 10px !important;
+  .wraper-sections > section:nth-child(1) div .text-wraper .text div {
+    width: 290px;
   }
-  .img-wraper {
-    left: -13% !important;
+  .wraper-sections > section:nth-child(1) div .text-wraper .text div img {
+    width: 100%;
+  }
+  .wraper-sections > section:nth-child(1) div .text-wraper .text p.text-content {
+    font-size: 18px;
+    line-height: 34px;
+    margin-bottom: 35px;
+  }
+  .wraper-sections > section:nth-child(1) div .text-wraper .text .btn {
+    width: 250px;
+    height: 70px;
+    background: #F2E617;
+    border-radius: 80px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper {
+    height: 439px;
+    width: 414px;
+    right: 30px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .main-img {
+    width: 100%;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .first-circle {
+    top: 195px;
+    height: 192px;
+    width: 192px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .second-circle {
+    top: 15px;
+    right: 230px;
+    height: 145px;
+    width: 145px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug1 {
+    bottom: 145px;
+    right: 16px;
+    height: 35px;
+    width: 35px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .paramecium {
+    top: 10px;
+    right: 27px;
+    height: 69px;
+    width: 80px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug2 {
+    bottom: 170px;
+    right: 295.5px;
+    z-index: 10;
+    height: 75px;
+    width: 100px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .redCircle {
+    top: 310px;
+    right: 210px;
+    height: 72px;
+    width: 72px;
   }
 }
 
-@media (max-width: 990px) {
-  .text {
-    left: 5px !important;
+@media screen and (max-width: 800px) {
+  .wraper-sections > section:nth-child(1) div .text-wraper .text {
+    left: 10px;
   }
-  .images {
-    padding-right: 5px !important;
-  }
-  .img-wraper, .text-wraper {
-    -webkit-transform: scale(0.8);
-            transform: scale(0.8);
-  }
-  .img-wraper {
-    left: -20% !important;
-  }
-}
-
-@media (max-width: 890px) {
-  .text {
-    left: 0px !important;
-  }
-  .images {
-    padding-right: 3px !important;
-  }
-  .img-wraper, .text-wraper {
-    -webkit-transform: scale(0.7);
-            transform: scale(0.7);
-  }
-  .img-wraper {
-    left: -35% !important;
-  }
-}
-
-@media (max-width: 750px) {
-  .first-circle {
-    right: 10% !important;
-  }
-  .ladybug1 {
-    right: 75px !important;
+  .wraper-sections > section:nth-child(1) div .images .img-wraper {
+    right: 10px;
   }
 }
 
 @media (max-width: 700px) {
+  .wraper-sections {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 96px;
+    left: 0px;
+  }
+  .section {
+    width: 100%;
+    height: auto;
+    background-color: #F8F8F8;
+    position: absolute;
+    z-index: 1;
+  }
   .wraper-sections > section:nth-child(1) div {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    overflow: visible;
   }
-  .text-wraper {
+  .wraper-sections > section:nth-child(1) div .text-wraper {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -374,18 +423,65 @@ body {
         -ms-flex-pack: center;
             justify-content: center;
   }
-  .text-wraper .text {
-    margin-top: 0px;
-    -webkit-box-align: center !important;
-        -ms-flex-align: center !important;
-            align-items: center !important;
+  .wraper-sections > section:nth-child(1) div .text-wraper .text {
+    left: 0px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding-top: 60px;
+    padding-bottom: 30px;
   }
-  .text-wraper .text p.text-content {
+  .wraper-sections > section:nth-child(1) div .text-wraper .text p.text-content {
     text-align: center;
   }
-  .img-wraper {
-    left: 0% !important;
+  .wraper-sections > section:nth-child(1) div .images {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    position: relative;
+    top: 0%;
+    left: 0%;
+    overflow: hidden;
   }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper {
+    right: -30px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .main-img {
+    width: 485px;
+    height: 439px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .first-circle {
+    top: 165px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .second-circle {
+    top: 30px;
+    right: 290px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug1 {
+    display: none;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .paramecium {
+    top: 210px;
+    right: 45px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug2 {
+    bottom: 280px;
+    right: 340px;
+    height: 80px;
+    width: 110px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper .redCircle {
+    top: 300px;
+    right: 345px;
+  }
+}
+
+.wraper-sections > section:nth-child(2) {
+  background-color: red;
 }
 
 .current {
@@ -492,7 +588,7 @@ body {
 }
 
 .show-menu {
-  z-index: 2;
+  z-index: 4;
 }
 
 @media (min-width: 700px) {

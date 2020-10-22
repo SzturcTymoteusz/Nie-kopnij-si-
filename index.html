@@ -38,13 +38,65 @@
                     </article>
                     <article class="images">
                         <div class="img-wraper">
-                            <div class="main-img"><img src="./img/image1.svg" alt="main img"></div>
-                            <div class="first-circle"> <img src="./img/Circle1.png" alt="circle1"></div>
-                            <div class="second-circle"><img src="./img/Circle2.png" alt="circle2"></div>
-                            <div class="ladybug1"><img src="./img/LadyBug1.png" alt="ladybug1"></div>
-                            <div class="paramecium"><img src="./img/Paramecium.png" alt="paramecium"></div>
-                            <div class="ladybug2"><img src="./img/LadyBug2.png" alt="ladybug2"></div>
-                            <div class="redCircle"><img src="./img/RedCircle.png" alt="redCirlce"></div>
+                            <div class="main-img">
+                                <picture>
+                                    <source srcset="./img/image1.svg" media="(min-width: 1101px)">
+                                    <source srcset="./img/image1_sm.svg">
+                                    <img srcset="./img/image1.svg, ./img/image1_sm.svg"
+                                    sizes=""
+                                    src="./img/image1.svg"
+                                    alt="main img"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="first-circle">
+                                <picture>
+                                    <source srcset="./img/Circle1.png" media="(min-width: 1101px)">
+                                    <source srcset="./img/circle1_sm.png">
+                                    <img srcset="./img/Circle1.png, ./img/circle1_sm.png"
+                                    sizes=""
+                                    src="./img/Circle1.png"
+                                    alt="circle1"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="second-circle">
+                                <picture>
+                                    <source srcset="./img/Circle2.png" media="(min-width: 1101px)">
+                                    <source srcset="./img/circle2_sm.png">
+                                    <img srcset="./img/Circle2.png, ./img/circle2_sm.png"
+                                    sizes=""
+                                    src="./img/Circle2.png"
+                                    alt="circle2"
+                                    >
+                                </picture>
+                            </div>
+                            <div class="ladybug1">
+                                <picture>
+                                    <img src="./img/LadyBug1.png" alt="ladybug1">
+                                </picture>
+                            </div>
+                            <div class="paramecium">
+                                <picture>
+                                    <source srcset="./img/Paramecium.png" media="(min-width: 1101px)">
+                                    <source srcset="./img/Paramecium_sm.png">
+                                    <img src="./img/Paramecium.png, ./img/Paramecium_sm.png" alt="paramecium">
+                                </picture>
+                            </div>
+                            <div class="ladybug2">
+                                <picture>
+                                    <source srcset="./img/LadyBug2.png" media="(min-width: 1101px)">
+                                    <source srcset="./img/LadyBug2_sm.png">
+                                    <img src="./img/LadyBug2.png, ./img/LadyBug2_sm.png" alt="ladybug2">
+                                </picture>
+                            </div>
+                            <div class="redCircle">
+                                <picture>
+                                    <source srcset="./img/RedCircle.png" media="(min-width: 1101px)">
+                                    <source srcset="./img/RedCircle_sm.png">
+                                    <img src="./img/RedCircle.png, ./img/RedCircle_sm.png" alt="redCirlce">
+                                </picture>
+                            </div>
                         </div>
                     </article>
                 </div>

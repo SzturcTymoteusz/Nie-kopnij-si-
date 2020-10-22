@@ -1,17 +1,19 @@
 .wraper-sections
-    min-height: calc( 100vh - 96px)
-    // min-height: 626px
-    position: relative
+    width: 100%
+    height: calc( 100% -  96px)
+    position: absolute
+    top: 96px
+    left: 0px
 .section
     width: 100%
     height: 100%
     background-color: #F8F8F8
     position: absolute
+    z-index: 1
 .wraper-sections > section:nth-child(1)
     div
         height: 100%
         display: flex
-        overflow: hidden
         .text-wraper
             flex-grow: 1
             .text
@@ -46,26 +48,25 @@
                     height: 88px
                     background: #F2E617
                     border-radius: 100px
+
         .images
             display: flex
             align-items: center
             justify-content: flex-end
             flex-basis: 55%
-            height: 100%
-            padding-right: 125px
+            // background: red
+            right: 0px
             .img-wraper
-                position: relative
-                left: 0%
-                top: 0%
                 height: 626px
                 width: 692px
+                position: relative
+                top: 0px
+                right: 135px
                 .main-img
                     position: absolute
                     top: 0px
                     right: 0px
                     z-index: 2
-                    height: 626px
-                    width: 692px
                 .first-circle
                     position: absolute
                     top: 251px
@@ -108,62 +109,151 @@
                     height: 89.38px
                     width: 89.38px
                     transform: rotate(-30deg)
-                img
-                    height: 100%
-                    width: 100%
+                picture
+                        width: 100%
+                        img
+                            width: 100%
+                            height: 100%
 
-@media ( max-width: 1300px )
-    .text
-        left: 100px !important
-    .images
-        padding-right: 50px !important
-@media ( max-width: 1120px )
-    .text
-        left: 40px !important
-    .images
-        padding-right: 10px !important
-    .img-wraper
-        left: -13% !important
-@media ( max-width: 990px )
-    .text
-        left: 5px !important
-    .images
-        padding-right: 5px !important
-    .img-wraper, .text-wraper
-        transform: scale(0.8)
-    .img-wraper
-        left: -20% !important
-@media ( max-width: 890px )
-    .text
-        left: 0px !important
-    .images
-        padding-right: 3px !important
-    .img-wraper, .text-wraper
-        transform: scale(0.7)
-    .img-wraper
-        left: -35% !important
-@media (max-width: 750px)
-    .first-circle
-        right: 10% !important
-    .ladybug1
-        right: 75px !important
+
+@media screen and ( max-width:1350px  )
+    .wraper-sections > section:nth-child(1)
+        div
+            .text-wraper
+                .text
+                    left: 80px
+            .images
+                .img-wraper
+                    right: 80px
+@media screen and ( max-width:1100px  )
+    .wraper-sections > section:nth-child(1)
+        div
+            .text-wraper
+                .text
+                    width: 290px
+                    left: 30px
+                    div
+                        width: 290px
+                        img
+                            width: 100%
+                    p.text-content
+                        font-size: 18px
+                        line-height: 34px
+                        margin-bottom: 35px
+                    .btn
+                        width: 250px
+                        height: 70px
+                        background: #F2E617
+                        border-radius: 80px
+            .images
+                .img-wraper
+                    height: 439px
+                    width: 414px
+                    right: 30px
+                    .main-img
+                        width: 100%
+                    .first-circle
+                        top: 195px
+                        height: 192px
+                        width: 192px
+                    .second-circle
+                        top: 15px
+                        right: 230px
+                        height: 145px
+                        width: 145px
+                    .ladybug1
+                        bottom: 145px
+                        right: 16px
+                        height: 35px
+                        width: 35px
+                    .paramecium
+                        top: 10px
+                        right: 27px
+                        height: 69px
+                        width: 80px
+                    .ladybug2
+                        bottom: 170px
+                        right: 295.5px
+                        z-index: 10
+                        height: 75px
+                        width: 100px
+                    .redCircle
+                        top: 310px
+                        right: 210px
+                        height: 72px
+                        width: 72px
+
+@media screen and ( max-width:800px  )
+    .wraper-sections > section:nth-child(1)
+        div
+            .text-wraper
+                .text
+                    left: 10px
+            .images
+                .img-wraper
+                    right: 10px
+
 @media (max-width: 700px)
+    .wraper-sections
+        width: 100%
+        height: auto
+        position: absolute
+        top: 96px
+        left: 0px
+    .section
+        width: 100%
+        height: auto
+        background-color: #F8F8F8
+        position: absolute
+        z-index: 1
     .wraper-sections > section:nth-child(1)
         div
             flex-direction: column
-            overflow: visible
-    .text-wraper
-        display: flex
-        justify-content: center
-        .text
-            margin-top: 0px
-            align-items: center !important
-            p.text-content
-                text-align: center
-    .img-wraper
-        left: 0% !important
+            .text-wraper
+                display: flex
+                justify-content: center
+                .text
+                    left: 0px
+                    align-items: center
+                    padding-top: 60px
+                    padding-bottom: 30px
+                    p.text-content
+                        text-align: center
+            .images
+                display: flex
+                justify-content: center
+                width: 100%
+                position: relative
+                top: 0%
+                left: 0%
+                overflow: hidden
+                .img-wraper
+                    right: -30px
+                    .main-img
+                        width: 485px
+                        height: 439px
+                    .first-circle
+                        top: 165px
+                    .second-circle
+                        top: 30px
+                        right: 290px
+                    .ladybug1
+                        display: none
+                    .paramecium
+                        top: 210px
+                        right: 45px
+                    .ladybug2
+                        bottom: 280px
+                        right: 340px
+                        height: 80px
+                        width: 110px
+                    .redCircle
+                        top: 300px
+                        right: 345px
+
 
 .wraper-sections > section:nth-child(2)
+    background-color: red
 .wraper-sections > section:nth-child(3)
 .wraper-sections > section:nth-child(4)
 
