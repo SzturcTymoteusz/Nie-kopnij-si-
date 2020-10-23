@@ -154,6 +154,7 @@ body {
 .section {
   width: 100%;
   height: 100%;
+  min-height: 630px;
   background-color: #F8F8F8;
   position: absolute;
   z-index: 1;
@@ -281,7 +282,7 @@ body {
 
 .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug2 {
   position: absolute;
-  bottom: 242.5px;
+  bottom: 272.5px;
   right: 470.5px;
   z-index: 2;
   height: 92.5px;
@@ -317,13 +318,12 @@ body {
   }
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 1120px) {
   .wraper-sections > section:nth-child(1) div .text-wraper .text {
-    width: 290px;
-    left: 30px;
+    width: 280px;
   }
   .wraper-sections > section:nth-child(1) div .text-wraper .text div {
-    width: 290px;
+    width: 280px;
   }
   .wraper-sections > section:nth-child(1) div .text-wraper .text div img {
     width: 100%;
@@ -341,8 +341,7 @@ body {
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper {
     height: 439px;
-    width: 414px;
-    right: 30px;
+    width: 404px;
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .main-img {
     width: 100%;
@@ -382,6 +381,15 @@ body {
     right: 210px;
     height: 72px;
     width: 72px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .wraper-sections > section:nth-child(1) div .text-wraper .text {
+    left: 50px;
+  }
+  .wraper-sections > section:nth-child(1) div .images .img-wraper {
+    right: 50px;
   }
 }
 
@@ -441,42 +449,60 @@ body {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    width: 100%;
-    position: relative;
-    top: 0%;
-    left: 0%;
     overflow: hidden;
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper {
-    right: -30px;
+    width: 100%;
+    height: 439px;
+    padding-bottom: 40px;
+    right: 0px;
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .main-img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
     width: 485px;
     height: 439px;
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .first-circle {
-    top: 165px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(calc(-50% + 140px), calc(-50% + 40px));
+            transform: translate(calc(-50% + 140px), calc(-50% + 40px));
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .second-circle {
-    top: 30px;
-    right: 290px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(calc(-50% - 120px), calc(-50% - 120px));
+            transform: translate(calc(-50% - 120px), calc(-50% - 120px));
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug1 {
     display: none;
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .paramecium {
-    top: 210px;
-    right: 45px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(calc(-50% + 150px), calc(-50% + 25px));
+            transform: translate(calc(-50% + 150px), calc(-50% + 25px));
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .ladybug2 {
-    bottom: 280px;
-    right: 340px;
-    height: 80px;
-    width: 110px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(calc(-50% - 145px), calc(-50% - 105px));
+            transform: translate(calc(-50% - 145px), calc(-50% - 105px));
   }
   .wraper-sections > section:nth-child(1) div .images .img-wraper .redCircle {
-    top: 300px;
-    right: 345px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(calc(-50% - 135px), calc(-50% + 105px));
+            transform: translate(calc(-50% - 135px), calc(-50% + 105px));
   }
 }
 

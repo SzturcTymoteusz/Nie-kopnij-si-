@@ -7,6 +7,7 @@
 .section
     width: 100%
     height: 100%
+    min-height: 630px
     background-color: #F8F8F8
     position: absolute
     z-index: 1
@@ -54,7 +55,6 @@
             align-items: center
             justify-content: flex-end
             flex-basis: 55%
-            // background: red
             right: 0px
             .img-wraper
                 height: 626px
@@ -96,7 +96,7 @@
                     width: 110px
                 .ladybug2
                     position: absolute
-                    bottom: 242.5px
+                    bottom: 272.5px
                     right: 470.5px
                     z-index: 2
                     height: 92.5px
@@ -125,15 +125,14 @@
             .images
                 .img-wraper
                     right: 80px
-@media screen and ( max-width:1100px  )
+@media screen and ( max-width:1120px  )
     .wraper-sections > section:nth-child(1)
         div
             .text-wraper
                 .text
-                    width: 290px
-                    left: 30px
+                    width: 280px
                     div
-                        width: 290px
+                        width: 280px
                         img
                             width: 100%
                     p.text-content
@@ -148,8 +147,7 @@
             .images
                 .img-wraper
                     height: 439px
-                    width: 414px
-                    right: 30px
+                    width: 404px
                     .main-img
                         width: 100%
                     .first-circle
@@ -182,6 +180,16 @@
                         right: 210px
                         height: 72px
                         width: 72px
+
+@media screen and ( max-width:900px  )
+    .wraper-sections > section:nth-child(1)
+        div
+            .text-wraper
+                .text
+                    left: 50px
+            .images
+                .img-wraper
+                    right: 50px
 
 @media screen and ( max-width:800px  )
     .wraper-sections > section:nth-child(1)
@@ -222,34 +230,50 @@
             .images
                 display: flex
                 justify-content: center
-                width: 100%
-                position: relative
-                top: 0%
-                left: 0%
+                // width: 100%
+                // position: relative
+                // top: 0%
+                // left: 0%
                 overflow: hidden
                 .img-wraper
-                    right: -30px
+                    width: 100%
+                    height: 439px
+                    padding-bottom: 40px
+                    right: 0px
                     .main-img
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(-50%,-50%)
                         width: 485px
                         height: 439px
                     .first-circle
-                        top: 165px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(calc(-50% + 140px),calc(-50% + 40px))
                     .second-circle
-                        top: 30px
-                        right: 290px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(calc(-50% - 120px),calc(-50% - 120px))
                     .ladybug1
                         display: none
                     .paramecium
-                        top: 210px
-                        right: 45px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(calc(-50% + 150px),calc(-50% + 25px))
                     .ladybug2
-                        bottom: 280px
-                        right: 340px
-                        height: 80px
-                        width: 110px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(calc(-50% - 145px),calc(-50% - 105px))
                     .redCircle
-                        top: 300px
-                        right: 345px
+                        position: absolute
+                        top: 50%
+                        left: 50%
+                        transform: translate(calc(-50% - 135px),calc(-50% + 105px))
 
 
 .wraper-sections > section:nth-child(2)
