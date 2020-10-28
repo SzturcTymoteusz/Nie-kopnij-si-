@@ -2,14 +2,32 @@
     margin: 0
     padding: 0
     box-sizing: border-box
-body
-    min-width: 300px
-    margin: auto
 
 @import _header
-@import _section1
+
+.container
+    min-height: 722px
+    min-width: 320px
+.container-menu
+    min-height: 100vh
+    height: 100vh
+    overflow: hidden
+@media screen and ( min-width:  700px)
+    .container-menu
+        min-height: 722px
+        height: auto
+        overflow: auto
+
+
+
+.section
+    min-height: 722px
+    height: 100vh
+.pressed-tab
+    text-decoration: underline
+
+@import _sectionBook
+@import _sectionContact
 @import _menu
 
 
-.pressed-tab
-    text-decoration: underline

@@ -1,0 +1,289 @@
+.section-book
+    height: calc( 100% - 96px )
+    display: flex
+    background-color: #F8F8F8
+    z-index: 1
+    .text
+        flex-grow: 1
+        display: flex
+        align-items: center
+        z-index: 1
+        .text-wraper
+            display: flex
+            flex-direction: column
+            align-items: flex-start
+            justify-content: center
+            width: 376px
+            position: relative
+            top: -4%
+            left: 208px
+            div
+                height: 84px
+                width: 376px
+                margin-bottom: 29px
+            p.text-content
+                font-family: Lora
+                font-style: normal
+                font-weight: normal
+                font-size: 22px
+                line-height: 34px
+                margin-bottom: 39px
+            .btn
+                width: 248px
+                height: 88px
+                background: #F2E617
+                border-radius: 30px
+                border: none
+                &:hover
+                    cursor: pointer
+
+
+    .images
+        display: flex
+        align-items: center
+        justify-content: flex-end
+        flex-basis: 55%
+        z-index: 1
+        .img-wraper
+            display: flex
+            align-items: center
+            justify-content: center
+            height: 626px
+            width: 692px
+            position: relative
+            top: 0px
+            right: 135px
+            .main-img
+                display: flex
+                align-items: center
+                justify-content: center
+                height: 626px
+                width: 692px
+                position: absolute
+                top: 0px
+                right: 0px
+                z-index: 2
+            .first-circle
+                position: absolute
+                top: 251px
+                right: 0px
+                z-index: 1
+                height: 341px
+                width: 341px
+            .second-circle
+                position: absolute
+                top: 23px
+                right: 366px
+                height: 209px
+                width: 209px
+            .ladybug1
+                position: absolute
+                bottom: 165px
+                right: 16px
+                z-index: 2
+                height: 63px
+                width: 65px
+            .paramecium
+                position: absolute
+                top: 23px
+                right: 71px
+                z-index: 2
+                height: 95px
+                width: 110px
+            .ladybug2
+                position: absolute
+                bottom: 272.5px
+                right: 470.5px
+                z-index: 2
+                height: 92.5px
+                width: 124.5px
+            .redCircle
+                position: absolute
+                top: 450px
+                right: 360px
+                z-index: 2
+                height: 89.38px
+                width: 89.38px
+                transform: rotate(-30deg)
+            picture
+                    width: 100%
+                    img
+                        width: 100%
+                        height: 100%
+
+@media screen and ( max-width:1350px  )
+    .section-book
+        .text
+            .text-wraper
+                left: 80px
+        .images
+            .img-wraper
+                right: 80px
+@media screen and ( max-width:1120px  )
+    .section-book
+        .text
+            .text-wraper
+                width: 270px
+                div
+                    width: 270px
+                    img
+                        width: 100%
+                p.text-content
+                    font-size: 18px
+                    line-height: 27px
+                    margin-bottom: 35px
+                .btn
+                    width: 250px
+                    height: 70px
+                    background: #F2E617
+                    border-radius: 20px
+                    img
+                        width: 100px
+                        height: 14px
+        .images
+            .img-wraper
+                height: 550px
+                width: 530px
+                .main-img
+                    width: 100%
+                    height: 100%
+                .first-circle
+                    top: 265px
+                    right: 30px
+                    height: 192px
+                    width: 192px
+                .second-circle
+                    top: 55px
+                    right: 290px
+                    height: 145px
+                    width: 145px
+                .ladybug1
+                    bottom: 185px
+                    right: 40px
+                    height: 35px
+                    width: 35px
+                .paramecium
+                    top: 50px
+                    right: 68px
+                    height: 59px
+                    width: 70px
+                .ladybug2
+                    bottom: 240px
+                    right: 365px
+                    z-index: 10
+                    height: 65px
+                    width: 85px
+                .redCircle
+                    top: 380px
+                    right: 255px
+                    height: 72px
+                    width: 72px
+                img
+                    width: 100%
+                    height: 100%
+
+
+@media screen and ( max-width:900px  )
+    .section-book
+        .text
+            .text-wraper
+                left: 50px
+        .images
+            .img-wraper
+                height: 439px
+                width: 414px
+                right: 50px
+                .first-circle
+                    top: 175px
+                .second-circle
+                    top: 45px
+                    right: 200px
+                .ladybug1
+                    bottom: 145px
+                    right: 16px
+                .paramecium
+                    top: 40px
+                    right: 35px
+                .ladybug2
+                    bottom: 187px
+                    right: 278px
+                .redCircle
+                    top: 295px
+                    right: 185px
+
+@media screen and ( max-width:800px  )
+    .section-book
+        .text
+            .text-wraper
+                left: 10px
+        .images
+            .img-wraper
+                right: 10px
+
+@media (max-width: 700px)
+    .section
+        height: 100%
+    .section-book
+        flex-direction: column
+        .text
+            display: flex
+            justify-content: center
+            .text-wraper
+                left: 0px
+                align-items: center
+                padding-top: 60px
+                padding-bottom: 30px
+                div
+                    width: 313px
+                p.text-content
+                    text-align: center
+                    font-size: 22px
+                    line-height: 36px
+                .btn
+                    width: 175px
+                    img
+
+        .images
+            display: flex
+            justify-content: center
+            overflow: hidden
+            .img-wraper
+                width: 100%
+                height: 439px
+                padding-bottom: 40px
+                right: 0px
+                .main-img
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(-50%,-50%)
+                    width: 485px
+                    height: 439px
+                .first-circle
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(calc(-50% + 140px),calc(-50% + 40px))
+                .second-circle
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(calc(-50% - 120px),calc(-50% - 120px))
+                .ladybug1
+                    display: none
+                .paramecium
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(calc(-50% + 150px),calc(-50% + 25px))
+                .ladybug2
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(calc(-50% - 145px),calc(-50% - 105px))
+                .redCircle
+                    position: absolute
+                    top: 50%
+                    left: 50%
+                    transform: translate(calc(-50% - 135px),calc(-50% + 105px))
+

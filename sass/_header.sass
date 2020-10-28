@@ -1,74 +1,55 @@
-#container
+#header
     display: flex
-    position: absolute
-    width: 100%
-    min-height: 100vh
-    header
+    height: 96px
+    z-index: 1
+    background: #FFF
+    .menu-container
+        display: none
+        font-family: Arial
+        font-style: normal
+        font-weight: bold
+        font-size: 24px
+        line-height: 28px
+        flex-basis: 56px
+        .menu-span:hover
+            cursor: pointer
+    section#title
         display: flex
-        align-items: stretch
-        z-index: 3
-        width: 100%
-        height: 96px
-        background-color: #ffffff
-        .menu-container
-            display: none
+        align-items: center
+        flex-grow: 1
+        margin-left: 6vw
+        img
+            width: 161px
+            height: 59px
+    nav
+        display: flex
+        align-items: center
+        justify-content: center
+        width: 219px
+        margin-right: 6vw
+        ul
+            display: flex
+            justify-content: space-between
+            flex-grow: 1
+            list-style: none
             font-family: Arial
             font-style: normal
             font-weight: bold
             font-size: 24px
             line-height: 28px
-            .menu:hover
-                cursor: pointer
-        section#title
+            span
+                &:hover
+                    cursor: pointer
+
+@media ( max-width: 700px)
+    #header
+        .menu-container
             display: flex
             align-items: center
-            flex-grow: 7
+            justify-content: center
             margin-left: 5vw
-            margin-right: 1vw
-            img
-                width: 161px
-                height: 59px
+        section#title
+            justify-content: flex-end
+            margin-right: 5vw
         nav
-            display: flex
-            flex-grow: 1
-            ul
-                display: flex
-                justify-content: space-between
-                align-items: center
-                flex-grow: 1
-                margin-right: 5vw
-                font-family: Arial
-                font-style: normal
-                font-weight: bold
-                font-size: 24px
-                line-height: 28px
-                li
-                    padding: 5px
-                    margin: auto
-                    span
-                        &:hover
-                            cursor: pointer
-
-
-@media (max-width: 840px)
-    #container
-        header
-            nav
-                ul
-                    li
-                        flex-basis: 20%
-@media ( max-width: 700px)
-    #container
-        flex-direction: column
-        header
-            .menu-container
-                display: flex
-                align-items: center
-                justify-content: center
-                flex-grow: 1
-                margin-left: 3vw
-            section#title
-                justify-content: flex-end
-                margin-right: 3vw
-            nav
-                display: none
+            display: none

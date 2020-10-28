@@ -1,7 +1,10 @@
-#menu
+.menu
     position: absolute
+    top: 0
+    left: 0
     width: 100%
     background-color: #F2E617
+    z-index: -1
     .content
         display: flex
         flex-direction: column
@@ -40,6 +43,7 @@
             flex-grow: 1
             height: 100%
             ul
+                list-style: none
                 li
                     font-family: Arial
                     font-style: normal
@@ -50,10 +54,9 @@
                     span:hover
                         cursor: pointer
 
-.show-menu
-    z-index: 4
-
-@media ( min-width: 700px)
-    .show-menu
-        z-index: 0
+.menu-display
+    z-index: 3
+@media screen and ( min-width: 700px )
+    .menu-display
+        z-index: -1
 
