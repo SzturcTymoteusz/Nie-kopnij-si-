@@ -198,6 +198,7 @@
   background: #F2E617;
   border-radius: 30px;
   border: none;
+  outline: 0;
 }
 
 .section-book .text .text-wraper .btn:hover {
@@ -593,6 +594,7 @@
   border: none;
   border-radius: 30px;
   margin-top: 45px;
+  outline: 0;
 }
 
 .section-contact .text-box .btn:hover {
