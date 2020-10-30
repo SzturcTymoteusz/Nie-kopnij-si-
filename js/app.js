@@ -31,7 +31,7 @@ container.addEventListener('click', (e)=>{
         console.log('write');
     };
     if(e.target.parentElement.classList.contains('download') || e.target.classList.contains('download')){
-        fetch('./NiekopnijSie.pdf')
+        fetch('./NieKopnijSie.pdf')
         .then(resp => resp.blob())
         .then(blob => {
             const url = window.URL.createObjectURL(blob);
@@ -39,7 +39,7 @@ container.addEventListener('click', (e)=>{
             a.style.display = 'none';
             a.href = url;
             //name file i want to download
-            a.download = './NiekopnijSie.pdf';
+            a.download = './NieKopnijSie.pdf';
             document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
