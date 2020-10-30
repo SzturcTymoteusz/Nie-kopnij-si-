@@ -31,7 +31,7 @@ container.addEventListener('click', (e)=>{
         console.log('write');
     };
     if(e.target.parentElement.classList.contains('download') || e.target.classList.contains('download')){
-        fetch('./text.txt')
+        fetch('./NiekopnijSie.pdf')
         .then(resp => resp.blob())
         .then(blob => {
             const url = window.URL.createObjectURL(blob);
