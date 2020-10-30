@@ -39,11 +39,24 @@ container.addEventListener('click', (e)=>{
             a.style.display = 'none';
             a.href = url;
             //name file i want to download
-            a.download = './text.txt';
+            a.download = './NiekopnijSie.pdf';
             document.body.appendChild(a);
             a.click();
             window.URL.revokeObjectURL(url);
         })
         .catch(() => alert('oh no! try again'));
     };
+})
+
+
+// change logo mobile picture
+window.addEventListener('resize', ()=>{
+    const windowWidth = window.innerWidth;
+    const imgTitle = document.querySelector('#title img');
+    if(windowWidth < 700){
+        imgTitle.src = "./img/Baner5.svg"
+    }
+    else{
+        imgTitle.src = "./img/Baner.svg"
+    }
 })

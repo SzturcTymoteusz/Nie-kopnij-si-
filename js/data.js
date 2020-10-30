@@ -6,11 +6,11 @@ const code = {
                     <span class="menu-span">Menu</span>
                 </div>
                 <section id="title">
-                    <img src="./img/Baner.svg" alt="Nie kopnij się w palec">
+                    <img src="./img/Baner.svg" alt="Nie kopnij się w palec"/>
                 </section>
                 <nav id="nav">
                     <ul class="list-unstyled">
-                        <li><span class="pressed-tab book">Książki</span></li>
+                        <li><span class="pressed-tab book">Książka</span></li>
                         <li><span class="contact">Kontakt</span></li>
                     </ul>
                 </nav>
@@ -74,7 +74,7 @@ const code = {
                 <nav>
                     <div class="back-container"><span class="back">Wróć</span></div>
                     <div class="menu-title">
-                        <img src="./img/Baner2.svg" alt="Nie kopnij się w palec">
+                        // <img src="./img/Baner2.svg" alt="Nie kopnij się w palec">
                     </div>
                 </nav>
                 <section>
@@ -96,7 +96,7 @@ const code = {
             </section>
             <nav id="nav">
                 <ul class="list-unstyled">
-                    <li><span class="book">Książki</span></li>
+                    <li><span class="book">Książka</span></li>
                     <li><span class="pressed-tab contact">Kontakt</span></li>
                 </ul>
             </nav>
@@ -109,11 +109,8 @@ const code = {
                 <p class="content">
                     Nazywam się Joachim i cieszę się, że tu jesteś. Wydałem <strong>Nie kopnij się w palec</strong>, bo uważam, że osobiste poznanie Boga przez Pana Jezusa jest najlepszym co Cię może spotkać!
                     <br/><br/>
-                    Chcesz dowiedzieć się więcej, masz pytania do książki, albo po prostu chcesz pogadać? Napisz.
+                    Chcesz dowiedzieć się więcej, masz pytania do książki, albo po prostu chcesz pogadać? Napisz na <strong>kubieniec92@gmail.com</strong>.
                 </p>
-                <button class="btn write">
-                    <img src="./img/napisz.svg" alt="napisz">
-                </button>
                 <article class="images-wraper">
                     <div class="circleBig">
                         <img src="./img/Circle1.png" alt="circle1">
