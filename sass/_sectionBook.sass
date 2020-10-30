@@ -1,5 +1,5 @@
 .section-book
-    height: calc( 100% - 96px )
+    height: calc( 100vh - 96px )
     display: flex
     background-color: #F8F8F8
     z-index: 1
@@ -17,12 +17,16 @@
             position: relative
             top: -4%
             left: 208px
-            div
-                height: 84px
+            .text-title
+                font-family: BubbleGum
+                font-style: normal
+                font-weight: normal
+                font-size: 42px
+                line-height: 42px
                 width: 376px
                 margin-bottom: 29px
             p.text-content
-                font-family: Lora
+                font-family: Inter
                 font-style: normal
                 font-weight: normal
                 font-size: 22px
@@ -35,14 +39,15 @@
                 border-radius: 30px
                 border: none
                 outline: 0
+                span
+                    font-family: BubbleGum
+                    font-style: normal
+                    font-weight: normal
+                    font-size: 20px
+                    line-height: 20px
                 &:hover
                     cursor: pointer
                     background: #d4cb1e
-
-
-
-
-
 
     .images
         display: flex
@@ -129,11 +134,11 @@
     .section-book
         .text
             .text-wraper
-                width: 270px
-                div
+                width: 275px
+                .text-title
+                    font-size: 30px
+                    line-height: 36px
                     width: 270px
-                    img
-                        width: 100%
                 p.text-content
                     font-size: 18px
                     line-height: 27px
@@ -231,6 +236,7 @@
         height: 100%
     .section-book
         flex-direction: column
+        min-height: 950px
         .text
             display: flex
             justify-content: center
@@ -239,15 +245,20 @@
                 align-items: center
                 padding-top: 60px
                 padding-bottom: 30px
-                div
-                    width: 313px
+                .text-title
+                    font-size: 30px
+                    line-height: 36px
+                    text-align: center
+                    width: 303px
                 p.text-content
                     text-align: center
                     font-size: 22px
                     line-height: 36px
                 .btn
                     width: 175px
-                    img
+                    span
+                        font-size: 15px
+                        line-height: 15px
 
         .images
             display: flex
