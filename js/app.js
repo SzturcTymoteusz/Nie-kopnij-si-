@@ -73,7 +73,7 @@ const code = {
                 <nav>
                     <div class="back-container"><span class="back">Wróć</span></div>
                     <div class="menu-title">
-                        // <img src="./img/Baner2.svg" alt="Nie kopnij się w palec">
+                        <img src="./img/Baner2.svg" alt="Nie kopnij się w palec">
                     </div>
                 </nav>
                 <section>
