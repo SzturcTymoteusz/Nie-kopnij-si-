@@ -21,17 +21,15 @@
 
 #header .menu-container {
   display: none;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  -ms-flex-preferred-size: 56px;
-      flex-basis: 56px;
 }
 
 #header .menu-container .menu-span:hover {
   cursor: pointer;
+}
+
+#header .menu-container .menu-span i {
+  font-size: 45px;
+  color: black;
 }
 
 #header section#title {
@@ -144,6 +142,7 @@
 
 .section-book {
   height: calc( 100vh - 96px);
+  min-height: 630px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -772,7 +771,7 @@
   display: flex;
   top: 0px;
   left: 0px;
-  height: 88px;
+  height: 96px;
   width: 100%;
 }
 
@@ -786,16 +785,16 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  padding: 34px;
-  font-family: Arial;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
+  padding: 5vw;
 }
 
 .menu .content nav .back-container span:hover {
   cursor: pointer;
+}
+
+.menu .content nav .back-container span i {
+  font-size: 50px;
+  color: black;
 }
 
 .menu .content nav .menu-title {
