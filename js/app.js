@@ -180,9 +180,6 @@ container.addEventListener('click', (e)=>{
         container.classList.toggle('container-menu');
     };
 
-    if(e.target.parentElement.classList.contains('write') || e.target.classList.contains('write')){
-        console.log('write');
-    };
     if(e.target.parentElement.classList.contains('download') || e.target.classList.contains('download')){
         fetch('./NieKopnijSie.pdf')
         .then(resp => resp.blob())
