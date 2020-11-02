@@ -6,7 +6,7 @@ const code = {
                 <span class="menu-span"><i class="fas fa-bars"></i></span>
             </div>
             <section id="title">
-                <img src="./img/Baner.svg" alt="Nie kopnij się w palec"/>
+                <img src="./img/Logo.svg" alt="Nie kopnij się w palec"/>
             </section>
             <nav id="nav">
                 <ul class="list-unstyled">
@@ -25,7 +25,7 @@ const code = {
             </article>
             <article class="images">
                 <div class="img-wraper">
-                    <img src="./img/mainImg.png" alt="image1" class="main-img"/>
+                    <img src="./img/mainImg.png" alt="mainImg" class="main-img"/>
                     <img class="first-circle" src="./img/Circle1.png" alt="circle1"/>
                     <img class="second-circle" src="./img/Circle2.png" alt="circle2"/>
                     <img class="ladybug1" src="./img/LadyBug1.png" alt="ladybug1">
@@ -59,7 +59,7 @@ const code = {
                     <span class="menu-span"><i class="fas fa-bars"></i></span>
                 </div>
                 <section id="title">
-                    <img src="./img/Baner.svg" alt="Nie kopnij się w palec"/>
+                    <img src="./img/Logo.svg" alt="Nie kopnij się w palec"/>
                 </section>
                 <nav id="nav">
                     <ul class="list-unstyled">
@@ -110,9 +110,9 @@ const code = {
 }
 const container = document.querySelector('.container');
 
-
 window.addEventListener('DOMContentLoaded', () => {
     container.innerHTML = code.book;
+    changeLogo();
 })
 
 container.addEventListener('click', (e)=>{
@@ -156,12 +156,15 @@ container.addEventListener('click', (e)=>{
 
 // change logo mobile picture
 window.addEventListener('resize', ()=>{
+    changeLogo();
+});
+const changeLogo = ()=>{
     const windowWidth = window.innerWidth;
     const imgTitle = document.querySelector('#title img');
     if(windowWidth < 700){
-        imgTitle.src = "./img/Baner5.svg"
+        imgTitle.src = "./img/Logo-menu.svg"
     }
     else{
-        imgTitle.src = "./img/Baner.svg"
+        imgTitle.src = "./img/Logo.svg"
     }
-})
+}
