@@ -142,7 +142,7 @@
 
 .section-book {
   height: calc( 100vh - 96px);
-  min-height: 630px;
+  min-height: 620px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
