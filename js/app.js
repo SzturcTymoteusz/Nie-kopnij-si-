@@ -25,7 +25,7 @@ const code = {
             </article>
             <article class="images">
                 <div class="img-wraper">
-                    <img src="./img/image1.svg" alt="image1" class="main-img"/>
+                    <img src="./img/mainImg.png" alt="image1" class="main-img"/>
                     <img class="first-circle" src="./img/Circle1.png" alt="circle1"/>
                     <img class="second-circle" src="./img/Circle2.png" alt="circle2"/>
                     <img class="ladybug1" src="./img/LadyBug1.png" alt="ladybug1">
