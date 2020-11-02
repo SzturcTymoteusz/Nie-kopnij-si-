@@ -41,7 +41,7 @@ const code = {
             <nav>
                 <div class="back-container"><span class="back"><i class="fas fa-times"></i></span></div>
                 <div class="menu-title">
-                    <img src="./img/Baner2.svg" alt="Nie kopnij się w palec">
+                    <img src="./img/Logo-menu.svg" alt="Nie kopnij się w palec">
                 </div>
             </nav>
             <section>
@@ -95,7 +95,7 @@ const code = {
                 <nav>
                     <div class="back-container"><span class="back"><i class="fas fa-times"></i></span></div>
                     <div class="menu-title">
-                        <img src="./img/Baner2.svg" alt="Nie kopnij się w palec">
+                        <img src="./img/Logo-menu.svg" alt="Nie kopnij się w palec">
                     </div>
                 </nav>
                 <section>
