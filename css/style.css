@@ -529,8 +529,8 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
+    -webkit-transform: translate(calc(-50% - 20px), -50%);
+            transform: translate(calc(-50% - 20px), -50%);
     width: 485px;
     height: 439px;
   }
@@ -555,22 +555,24 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(calc(-50% + 150px), calc(-50% + 25px));
-            transform: translate(calc(-50% + 150px), calc(-50% + 25px));
+    -webkit-transform: translate(calc(-50% + 135px), calc(-50% + 20px));
+            transform: translate(calc(-50% + 135px), calc(-50% + 20px));
   }
   .section-book .images .img-wraper .ladybug2 {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(calc(-50% - 145px), calc(-50% - 105px));
-            transform: translate(calc(-50% - 145px), calc(-50% - 105px));
+    -webkit-transform: translate(calc(-50% - 135px), calc(-50% - 123px));
+            transform: translate(calc(-50% - 135px), calc(-50% - 123px));
   }
   .section-book .images .img-wraper .redCircle {
     position: absolute;
     top: 50%;
     left: 50%;
-    -webkit-transform: translate(calc(-50% - 135px), calc(-50% + 105px));
-            transform: translate(calc(-50% - 135px), calc(-50% + 105px));
+    height: 80px;
+    width: 80px;
+    -webkit-transform: translate(calc(-50% - 120px), calc(-50% + 90px));
+            transform: translate(calc(-50% - 120px), calc(-50% + 90px));
   }
 }
 
