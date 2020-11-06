@@ -137,19 +137,20 @@ container.addEventListener('click', (e)=>{
     };
 
     if(e.target.parentElement.classList.contains('download') || e.target.classList.contains('download')){
-        fetch('./NieKopnijSie.pdf')
-        .then(resp => resp.blob())
-        .then(blob => {
-            const url = window.URL.createObjectURL(blob);
-            const a = document.createElement('a');
-            a.style.display = 'none';
-            a.href = url;
-            a.download = './NieKopnijSie.pdf';
-            document.body.appendChild(a);
-            a.click();
-            window.URL.revokeObjectURL(url);
-        })
-        .catch(() => alert('oh no! try again'));
+        // fetch('./NieKopnijSie.pdf')
+        // .then(resp => resp.blob())
+        // .then(blob => {
+        //     const url = window.URL.createObjectURL(blob);
+        //     const a = document.createElement('a');
+        //     a.style.display = 'none';
+        //     a.href = url;
+        //     a.download = './NieKopnijSie.pdf';
+        //     document.body.appendChild(a);
+        //     a.click();
+        //     window.URL.revokeObjectURL(url);
+        // })
+        // .catch(() => alert('oh no! try again'));
+        window.open('./NieKopnijSie.pdf', "NieKopnijSię");
     };
 })
 
