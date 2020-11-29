@@ -1,4 +1,4 @@
-## Dont stub yourtoe
+## Dont stub your toe
 
 # General info
 
