@@ -13,4 +13,4 @@ Friel book „Don’t Stub Your Toe”. The second subpage "Contact" consist inf
 
 ## Setup
 
-To see this project, open link.
+To see this project, open link: http://niekopnijsie.pl/
